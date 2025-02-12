@@ -8,5 +8,7 @@
 - **Nome:** Miguel Nogueira Barrocas
 - **Número de estudante:** a104272
 
+![alt text](foto.jpg)
+
 ## Sobre o repositório
 Este repositório contém os Trabalhos Práticos da UC Processamento de Linguagens.
