@@ -1,7 +1,7 @@
 # TPC1 - Somador On/Off
 
 **Data:** [12-02-2025]  
-**Autor:** [Miguel Barrocas] ([A104272])  
+**Autor:** [Miguel Barrocas] [A104272] 
   
 
 ## Descrição  
@@ -14,7 +14,7 @@ Este projeto consiste na implementação de um **somador inteligente** em Python
 - Ativa e desativa a soma com os comandos `"On"` e `"Off"`.  
 - Lê dados diretamente do utilizador via `input()`.  
 - Apresenta resultados parciais sempre que `"="` aparece na entrada.  
--
+
 
 ## Estrutura do Código  
 
