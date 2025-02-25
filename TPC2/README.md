@@ -53,4 +53,11 @@ Compositores musicais (Ordem alfabética):
 Alessandro Stradella
 Antonio Maria Abbatini
 Bach, Johann Christoph
-...
+
+```
+
+## 5. Conclusão  
+
+A análise do dataset foi realizada com sucesso, permitindo a extração correta das informações solicitadas. O parsing manual do CSV demonstrou-se eficiente, garantindo um tratamento adequado de aspas e delimitadores.  
+
+
