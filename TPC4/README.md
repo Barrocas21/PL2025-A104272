@@ -29,6 +29,43 @@ A função `tokenizar(consulta)` percorre a string da consulta e, a cada iteraç
 1. Testa cada padrão de expressão regular.
 2. Se houver correspondência, adiciona o token à lista, exceto espaços.
 3. Avança no texto de acordo com o comprimento do token identificado.
-4. Se nenhum padrão for reconhecido, lança um erro de sintaxe.
+4. Se nenhum padrão for reconhecido, emite um erro de sintaxe.
+
+
+##Exemplos de utilização
+# DBPedia: obras de Chuck Berry
+SELECT ?nome ?desc WHERE {
+  ?s a dbo:MusicalArtist.
+  ?s foaf:name "Chuck Berry"@en .
+  ?w dbo:artist ?s.
+  ?w foaf:name ?nome.
+  ?w dbo:abstract ?desc
+} LIMIT 1000
+
+##Saída
+(COMENTARIO, '# DBPedia: obras de Chuck Berry')
+(PALAVRA_RESERVADA, 'SELECT')
+(VARIAVEL, '?nome')
+(VARIAVEL, '?desc')
+(PALAVRA_RESERVADA, 'WHERE')
+(SIMBOLO, '{')
+(VARIAVEL, '?s')
+(PALAVRA_RESERVADA, 'a')
+(URI, 'dbo:MusicalArtist')
+(SIMBOLO, '.')
+(URI, 'foaf:name')
+(LITERAL, '"Chuck Berry"@en')
+(SIMBOLO, '.')
+(URI, 'dbo:artist')
+(VARIAVEL, '?s')
+(SIMBOLO, '.')
+(URI, 'foaf:name')
+(VARIAVEL, '?nome')
+(SIMBOLO, '.')
+(URI, 'dbo:abstract')
+(VARIAVEL, '?desc')
+(SIMBOLO, '}')
+(PALAVRA_RESERVADA, 'LIMIT')
+(NUMERO, '1000')
 
 
