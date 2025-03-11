@@ -32,7 +32,7 @@ A função `tokenizar(consulta)` percorre a string da consulta e, a cada iteraç
 4. Se nenhum padrão for reconhecido, emite um erro de sintaxe.
 
 
-##Exemplos de utilização
+## Exemplos de utilização
 # DBPedia: obras de Chuck Berry
 SELECT ?nome ?desc WHERE {
   ?s a dbo:MusicalArtist.
@@ -42,7 +42,7 @@ SELECT ?nome ?desc WHERE {
   ?w dbo:abstract ?desc
 } LIMIT 1000
 
-##Saída
+# Saída Esperada
 (COMENTARIO, '# DBPedia: obras de Chuck Berry')
 (PALAVRA_RESERVADA, 'SELECT')
 (VARIAVEL, '?nome')
