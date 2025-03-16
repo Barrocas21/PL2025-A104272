@@ -33,7 +33,6 @@ A função `tokenizar(consulta)` percorre a string da consulta e, a cada iteraç
 
 
 ## Exemplos de utilização
-# DBPedia: obras de Chuck Berry
 SELECT ?nome ?desc WHERE {
   ?s a dbo:MusicalArtist.
   ?s foaf:name "Chuck Berry"@en .
